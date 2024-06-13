@@ -1,4 +1,8 @@
 #include<stdio.h>
+/**
+ *main - Entry Access
+ *Return: 0 Always Success
+ */
 int main(void)
 {
 int x = 0;
@@ -10,4 +14,3 @@ x++;
 putchar('\n');
 return (0);
 }
-  
