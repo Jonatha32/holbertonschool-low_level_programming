@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ *main - entry point
+ *Return: 0 Always Success
+ */
 int main(void)
 {
 _putchar('_');
@@ -11,5 +14,5 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-	return (0);
+return (0);
 }
