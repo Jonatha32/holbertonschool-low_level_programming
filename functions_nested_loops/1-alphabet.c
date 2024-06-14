@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *main - entry point
- *Return: 0 Always Success
+ * print_alphabet - print
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -12,5 +12,4 @@ _putchar(a);
 a++;
 }
 _putchar ('\n');
-return (0);
 }
