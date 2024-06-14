@@ -3,10 +3,10 @@
  *main - entry point
  *Return: 0 Always Success
  */
-void print_alphabet(void)
+int main(void)
 {
 char a = 'a';
-while (a <= 'z')
+while(a <= 'z')
 {
 _putchar(a);
 a++;
