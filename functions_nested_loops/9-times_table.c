@@ -9,12 +9,12 @@ int b;
 int c;
 int d;
 int e;
-while (a < 9)
+for (a = 0; a < 9; a++)
 {
-a++;
+
 for (b = 0; b <= 9; b++)
 {
-c = a *b;
+c = a * b;
 if (c > 9)
 {
 d = c % 10;
