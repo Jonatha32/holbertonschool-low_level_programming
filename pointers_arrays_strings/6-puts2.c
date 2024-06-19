@@ -6,13 +6,16 @@
 void puts2(char *str)
 {
 int a = 0;
+int b;
 while (str[a] != '\0')
 {
-if (a != 1 && a != 3 && a != 5 && a != 7 && a != 9)
-{
-_putchar(str[a]);
-}
 a++;
+}
+for(b = 0; b < a; b += 2)
+{
+_putchar(str[b]);
 }
 _putchar('\n');
 }
+
+  
