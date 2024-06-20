@@ -1,17 +1,20 @@
 #include "main.h"
+/**
+ * _strcpy - copy
+ * @dest: pointer
+ * @src: pointer
+ * Return: b
+ */
 char *_strcpy(char *dest, char *src)
 {
-  int a;
-  int b;
-  while (src[a] != '\0')
-    {
-      a++;
-    }
-  for (b = a - 1; b < a - 1; b++)
-    {
-      _putchar(src[b]);
-    }
-  _putchar(src[b]);
-  return(dest);
+int a;
+char *b = dest;
+while (src[a] != '\0')
+{
+*dest = src[a];
+dest++;
+a++;
 }
-  
+*dest = '\0';
+return (b);
+}
