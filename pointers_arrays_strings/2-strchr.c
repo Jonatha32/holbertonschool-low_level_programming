@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr - string character
  * @s: parameter
@@ -16,5 +15,9 @@ return (s);
 }
 s++;
 }
-return(NULL);
+if (c == '\0' && *s == '\0')
+{
+return (s);
+}
+return ('\0');
 }
