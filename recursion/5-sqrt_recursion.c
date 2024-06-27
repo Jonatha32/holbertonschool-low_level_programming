@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- * _sqrt_recursion - main function
  * _sqrt_oki - new function
  * @n: parameter
  * @a: parameter
@@ -18,6 +17,11 @@ return (-1);
 }
 return (_sqrt_oki(n, a + 1));
 }
+/**
+ * _sqrt_recursion - main function
+ * @n: parameter
+ * Return: -1
+ */
 int _sqrt_recursion(int n)
 {
 if (n < 0)
