@@ -25,7 +25,7 @@ return (NULL);
 while (c < a)
 {
 b[c] = 0;
- c++;
+c++;
 }
 return (b);
 }
