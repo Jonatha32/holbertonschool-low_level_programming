@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * _calloc - initialize memory
  * @nmemb: parameter
@@ -11,7 +10,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int a;
-void *b;
+char *b;
+unsigned int c = 0;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
@@ -22,6 +22,10 @@ if (b == NULL)
 {
 return (NULL);
 }
-memset(b, 0, a);
+while (c < a)
+{
+b[c] = 0;
+ c++;
+}
 return (b);
 }
