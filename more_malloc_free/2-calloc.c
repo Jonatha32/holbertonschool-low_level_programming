@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * _calloc - initialize memory
  * @nmemb: parameter
@@ -21,5 +22,6 @@ if (b == NULL)
 {
 return (NULL);
 }
+memset(b, 0, a);
 return (b);
 }
