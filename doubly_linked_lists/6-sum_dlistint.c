@@ -4,7 +4,7 @@
 /**
  * sum_dlistint - sum list
  * @head: parameter
- * Return: b
+ * Return: a
  */
 int sum_dlistint(dlistint_t *head)
 {
