@@ -19,9 +19,7 @@ if (index == 0)
 {
 *head = a->next;
 if (*head != NULL)
-{
 (*head)->prev = NULL;
-}
 free(a);
 return (1);
 }
