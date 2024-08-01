@@ -19,21 +19,29 @@ if (index == 0)
 {
 *head = a->next;
 if (*head != NULL)
+{
 (*head)->prev = NULL;
+}
 free(a);
 return (1);
 }
 while (a != NULL && b < index)
+{
 a = a->next;
 b++;
+}
 if (a == NULL)
 {
 return (-1);
 }
 if (a->prev != NULL)
+{
 a->prev->next = a->next;
+}
 if (a->next != NULL)
+{
 a->next->prev = a->prev;
+}
 free(a);
 return (1);
 }
