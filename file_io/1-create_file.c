@@ -26,7 +26,7 @@ c++;
 b = write(a, text_content, c);
 if (b == -1 || b != c)
 {
-close (a);
+close(a);
 return (-1);
 }
 }
