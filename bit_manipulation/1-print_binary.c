@@ -13,12 +13,12 @@ int b = 0;
 a = 1UL << (sizeof(n) * 8 - 1);
 while (a > 0)
 {
-if (n & a)
+if ((n & a) == a)
 {
 putchar('1');
 b = 1;
 }
-if (b)
+else if (b)
 {
 putchar('0');
 }
