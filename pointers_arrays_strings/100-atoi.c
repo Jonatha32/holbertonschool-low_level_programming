@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-int a = 0;
+unsigned int a = 0;
 int b = 1;
 int c = 0;
 int d = 0;
@@ -27,6 +27,5 @@ break;
 }
 c++;
 }
-return a * b;
+return (a *b);
 }
-     
