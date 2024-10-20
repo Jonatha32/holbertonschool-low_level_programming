@@ -7,9 +7,9 @@
 
 void times_table(void)
 {
-	int result, fil, col = 0, dig1, dig2;
+	int result, fil, col, dig1, dig2;
 
-	while (col <= 9)
+	for (col = 0; col <= 9; col++)
 	{
 		for (fil = 0; fil <= 9; fil++)
 		{
@@ -23,7 +23,10 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
+				if (fil != 0)
+				{
+					_putchar(' ');
+				}
 				_putchar(result + '0');
 			}
 				if (fil != 9)
@@ -31,9 +34,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			result = 0;
 		}
-		col++;
 		_putchar('\n');
 	}
 	_putchar('\n');
