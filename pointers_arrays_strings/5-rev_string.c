@@ -2,28 +2,27 @@
 #include "main.h"
 
 /**
- *
+ * rev_string - function
+ * @s: parameter
  */
 
 void rev_string(char *s)
 {
-	int a = 0, b = 0;
-	char *c;
+	int a = 0, b;
+	char c;
 
 	while (s[a] != '\0')
 	{
 		a++;
 	}
-	c = s[a];
-	while (c[b] == s[a])
+	b = 0;
+	a = a - 1;
+	while (b < a)
 	{
-		b++;
+	c = s[b];
+	s[b] = s[a];
+	s[a] = c;
+	b++;
+	a--;
 	}
-	while (b >= 0)
-	{
-		_putchar(c[b]);
-		b--;
-	}
-	s = c[b];
-	_putchar('\n');
 }
