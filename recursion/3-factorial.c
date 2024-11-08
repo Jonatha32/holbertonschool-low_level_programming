@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- *
- *
+ * factorial - function
+ * @n: parameter
+ * Return: lol
  */
 
 int factorial(int n)
