@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	b = malloc(size * sizeof(char));
 	if (b == NULL)
 	{
-		printf("failed to allocate memory");
+		printf("failed to allocate memory\n");
 		return(NULL);
 	}
 	for (i = 0; i < size; i++)
