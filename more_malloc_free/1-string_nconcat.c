@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int a = 0, b, c;
+	int a = 0, b = 0, c;
 	char *s3;
 	unsigned int d;
 
@@ -40,6 +40,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s3[c] = s2[d];
 		c++;
 	}
-	s3[c + d] = '\0';
+	s3[c] = '\0';
 	return (s3);
 }
